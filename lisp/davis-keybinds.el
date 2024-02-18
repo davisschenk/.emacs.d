@@ -129,7 +129,8 @@
     "r" 'restart-emacs
     "Q" 'kill-emacs)
     
-  (+general-global-menu! "open" "o")
+  (+general-global-menu! "open" "o"
+    "P" 'davis/find-file-in-config)
 
   (+general-global-menu! "toggle" "t"
     "f" 'toggle-frame-fullscreen)
