@@ -1,0 +1,10 @@
+/.cache/
+/auto-save-list/
+/backup/
+/eclipse.jdt.ls/
+/elpa/
+/elpaca/
+*.eld
+/history
+*.cache
+/transient/
