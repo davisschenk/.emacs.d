@@ -115,6 +115,8 @@
     "s" 'save-buffer)
        
   (+general-global-menu! "git" "g")
+
+  (+general-global-menu! "spelling" "s")
        
   (+general-global-menu! "narrow" "n"
     "d" 'narrow-to-defun

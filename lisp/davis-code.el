@@ -40,12 +40,26 @@
 (use-package flyspell
   :ensure nil
   :hook (prog-mode . flyspell-prog-mode)
-  :hook (text-mode . flyspell-mode))
+  :hook (text-mode . flyspell-mode)
+  :general
+  (+general-global-toggle
+    "s" '(:ignore t :which-key "spelling")
+    "ss" 'flyspell-mode
+    "sp" 'flyspell-prog-mode)
+
+  (+general-global-spelling
+    "n" 'flyspell-goto-next-error
+    "b" 'flyspell-buffer
+    "w" 'flyspell-word
+    "r" 'flyspell-region))
 
 (use-package flyspell-correct
   :general 
   (general-define-key 
-  	[remap ispell-word] #'flyspell-correct-at-point))
+  	[remap ispell-word] #'flyspell-correct-at-point)
+  
+  (+general-global-spelling
+    "p" 'flyspell-correct-at-point))
 
 (use-package lsp-mode
   :commands lsp
