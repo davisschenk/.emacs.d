@@ -56,6 +56,7 @@
 (require 'davis-code)
 (require 'davis-treemacs)
 (require 'davis-git)
+(require 'davis-org)
 
 ;; Language specific config
 (require 'davis-lisp)
