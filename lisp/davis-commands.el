@@ -56,6 +56,7 @@
           (current-prefix-arg nil))
       (call-interactively (if local #'text-scale-adjust #'global-text-scale-adjust))))
 
+;; Adapted from doomemacs
 (defun davis/project-root (&optional dir)
   "Return the project root of DIR (defaults to `default-directory').
 Returns nil if not in a project."
@@ -64,11 +65,13 @@ Returns nil if not in a project."
         projectile-require-project-root)
     (projectile-project-root dir)))
 
+;; Adapted from doomemacs
 (defun davis/project-p (&optional dir)
   "Return t if DIR (defaults to `default-directory') is a valid project."
   (and (davis/project-root dir)
        t))
 
+;; Adapted from doomemacs
 (defun davis/project-find-file (dir)
   "Jump to a file in DIR (searched recursively).
 
