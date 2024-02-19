@@ -96,6 +96,7 @@ If DIR is not a project, it will be indexed (but not cached)."
           ((call-interactively #'find-file)))))
 
 (defun davis/find-file-in-config()
+  "Browse through files in the users Emacs directory."
   (interactive)
   (davis/project-find-file user-emacs-directory))
 
