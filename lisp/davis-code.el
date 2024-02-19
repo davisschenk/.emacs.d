@@ -88,6 +88,10 @@
 (use-package yasnippet-snippets
   :after yas-snippet)
 
+;; Colorize color names in buffers
+(use-package rainbow-mode
+  :commands (rainbow-mode))
+
 
 (provide 'davis-code)
 ;;; davis-code.el ends here
