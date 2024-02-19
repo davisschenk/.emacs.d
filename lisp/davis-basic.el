@@ -81,6 +81,10 @@
   (version-control t)
   (find-file-visit-truename t))
 
+(use-package help
+  :ensure nil
+  :custom
+  (help-window-select t "Always select the help window"))
 
 
 (provide 'davis-basic)
