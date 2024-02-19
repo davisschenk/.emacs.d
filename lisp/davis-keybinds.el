@@ -139,6 +139,10 @@
 
   (+general-global-menu! "code" "c")
 
+  (+general-global-menu! "application" "a"
+    "or" '(:ignore t :which-key "org-roam")
+    "o" '(:ignore t :which-key "org-mode"))
+
   (+general-global-menu! "insert" "i")
 
   (+general-global-menu! "window" "w"
