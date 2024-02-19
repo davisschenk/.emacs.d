@@ -86,6 +86,9 @@
   :custom
   (help-window-select t "Always select the help window"))
 
+(use-package marginalia
+  :defer 2
+  :config (marginalia-mode))
 
 (provide 'davis-basic)
 ;;; davis-basic.el ends here
