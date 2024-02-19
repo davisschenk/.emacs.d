@@ -8,3 +8,5 @@
 /history
 *.cache
 /transient/
+/projects
+/org-roam.db
