@@ -33,6 +33,7 @@
   :custom
   (indent-tabs-mode nil)
   (inhibit-startup-screen t)
+  (sentence-end-double-space nil)
   (history-delete-duplicates t))
 
 (use-package vertico
